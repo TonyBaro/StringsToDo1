@@ -45,3 +45,18 @@ function countNonSpaces(string){
 
 console.log(countNonSpaces("Honey pie, you are driving me crazy"))
 console.log(countNonSpaces("Hello world !"))
+
+function removeShorterStrings(string,num){
+    var splitString = string.split(" ")
+    var newString = []
+    for (var x=0;x<= splitString.length;x++){
+        console.log(splitString[0])
+        console.log(splitString[0].length)
+        if (splitString[x].length > num){
+            newString.push(splitString[x])
+        }
+    }
+    return newString
+
+}
+console.log(removeShorterStrings('Good morning sunshine the Earth says hello', 4))
